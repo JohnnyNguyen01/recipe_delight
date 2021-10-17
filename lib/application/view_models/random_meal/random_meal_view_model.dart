@@ -1,18 +1,18 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:recipe_app/application/view_models/home/models/home_view_state.dart';
+import 'package:recipe_app/application/view_models/random_meal/models/random_meal_view_state.dart';
 import 'package:recipe_app/domain/interactors/meal/i_meal_interactor.dart';
 import 'package:recipe_app/domain/interactors/meal/meal_interactor.dart';
 
-final homeViewModelProvider =
-    StateNotifierProvider.autoDispose<HomeViewModel, HomeViewState>((ref) {
+final randomMealViewModelProvider = StateNotifierProvider.autoDispose<
+    RandomMealScreenViewModel, RandomMealViewState>((ref) {
   final mealInteractor = ref.watch(mealInteractorProvider);
-  return HomeViewModel(mealInteractor: mealInteractor);
+  return RandomMealScreenViewModel(mealInteractor: mealInteractor);
 });
 
-class HomeViewModel extends StateNotifier<HomeViewState> {
-  HomeViewModel({required final IMealInteractor mealInteractor})
+class RandomMealScreenViewModel extends StateNotifier<RandomMealViewState> {
+  RandomMealScreenViewModel({required final IMealInteractor mealInteractor})
       : _mealInteractor = mealInteractor,
-        super(const HomeViewState()) {
+        super(const RandomMealViewState()) {
     _initialise();
   }
 

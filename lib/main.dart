@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:recipe_app/presentation/screens/home_screen.dart';
+import 'package:recipe_app/presentation/screens/random_meal/random_meal_screen.dart';
 import 'package:recipe_app/utils/theme.dart';
 
 void main() {
@@ -23,7 +23,7 @@ class MyApp extends HookWidget {
       themeMode: ThemeMode.light,
       theme: lightTheme,
       darkTheme: darkTheme,
-      home: const HomeScreen(),
+      home: const RandomMealScreen(),
     );
   }
 }

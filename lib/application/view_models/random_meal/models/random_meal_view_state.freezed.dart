@@ -2,7 +2,7 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target
 
-part of 'home_view_state.dart';
+part of 'random_meal_view_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -14,12 +14,12 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
 
 /// @nodoc
-class _$HomeViewStateTearOff {
-  const _$HomeViewStateTearOff();
+class _$RandomMealViewStateTearOff {
+  const _$RandomMealViewStateTearOff();
 
-  _HomeViewState call(
+  _RandomMealViewState call(
       {bool isLoading = false, MealEntity meal = const MealEntity()}) {
-    return _HomeViewState(
+    return _RandomMealViewState(
       isLoading: isLoading,
       meal: meal,
     );
@@ -27,36 +27,36 @@ class _$HomeViewStateTearOff {
 }
 
 /// @nodoc
-const $HomeViewState = _$HomeViewStateTearOff();
+const $RandomMealViewState = _$RandomMealViewStateTearOff();
 
 /// @nodoc
-mixin _$HomeViewState {
+mixin _$RandomMealViewState {
   bool get isLoading => throw _privateConstructorUsedError;
   MealEntity get meal => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
-  $HomeViewStateCopyWith<HomeViewState> get copyWith =>
+  $RandomMealViewStateCopyWith<RandomMealViewState> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $HomeViewStateCopyWith<$Res> {
-  factory $HomeViewStateCopyWith(
-          HomeViewState value, $Res Function(HomeViewState) then) =
-      _$HomeViewStateCopyWithImpl<$Res>;
+abstract class $RandomMealViewStateCopyWith<$Res> {
+  factory $RandomMealViewStateCopyWith(
+          RandomMealViewState value, $Res Function(RandomMealViewState) then) =
+      _$RandomMealViewStateCopyWithImpl<$Res>;
   $Res call({bool isLoading, MealEntity meal});
 
   $MealEntityCopyWith<$Res> get meal;
 }
 
 /// @nodoc
-class _$HomeViewStateCopyWithImpl<$Res>
-    implements $HomeViewStateCopyWith<$Res> {
-  _$HomeViewStateCopyWithImpl(this._value, this._then);
+class _$RandomMealViewStateCopyWithImpl<$Res>
+    implements $RandomMealViewStateCopyWith<$Res> {
+  _$RandomMealViewStateCopyWithImpl(this._value, this._then);
 
-  final HomeViewState _value;
+  final RandomMealViewState _value;
   // ignore: unused_field
-  final $Res Function(HomeViewState) _then;
+  final $Res Function(RandomMealViewState) _then;
 
   @override
   $Res call({
@@ -84,11 +84,11 @@ class _$HomeViewStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
-abstract class _$HomeViewStateCopyWith<$Res>
-    implements $HomeViewStateCopyWith<$Res> {
-  factory _$HomeViewStateCopyWith(
-          _HomeViewState value, $Res Function(_HomeViewState) then) =
-      __$HomeViewStateCopyWithImpl<$Res>;
+abstract class _$RandomMealViewStateCopyWith<$Res>
+    implements $RandomMealViewStateCopyWith<$Res> {
+  factory _$RandomMealViewStateCopyWith(_RandomMealViewState value,
+          $Res Function(_RandomMealViewState) then) =
+      __$RandomMealViewStateCopyWithImpl<$Res>;
   @override
   $Res call({bool isLoading, MealEntity meal});
 
@@ -97,22 +97,22 @@ abstract class _$HomeViewStateCopyWith<$Res>
 }
 
 /// @nodoc
-class __$HomeViewStateCopyWithImpl<$Res>
-    extends _$HomeViewStateCopyWithImpl<$Res>
-    implements _$HomeViewStateCopyWith<$Res> {
-  __$HomeViewStateCopyWithImpl(
-      _HomeViewState _value, $Res Function(_HomeViewState) _then)
-      : super(_value, (v) => _then(v as _HomeViewState));
+class __$RandomMealViewStateCopyWithImpl<$Res>
+    extends _$RandomMealViewStateCopyWithImpl<$Res>
+    implements _$RandomMealViewStateCopyWith<$Res> {
+  __$RandomMealViewStateCopyWithImpl(
+      _RandomMealViewState _value, $Res Function(_RandomMealViewState) _then)
+      : super(_value, (v) => _then(v as _RandomMealViewState));
 
   @override
-  _HomeViewState get _value => super._value as _HomeViewState;
+  _RandomMealViewState get _value => super._value as _RandomMealViewState;
 
   @override
   $Res call({
     Object? isLoading = freezed,
     Object? meal = freezed,
   }) {
-    return _then(_HomeViewState(
+    return _then(_RandomMealViewState(
       isLoading: isLoading == freezed
           ? _value.isLoading
           : isLoading // ignore: cast_nullable_to_non_nullable
@@ -127,8 +127,8 @@ class __$HomeViewStateCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_HomeViewState implements _HomeViewState {
-  const _$_HomeViewState(
+class _$_RandomMealViewState implements _RandomMealViewState {
+  const _$_RandomMealViewState(
       {this.isLoading = false, this.meal = const MealEntity()});
 
   @JsonKey(defaultValue: false)
@@ -140,13 +140,13 @@ class _$_HomeViewState implements _HomeViewState {
 
   @override
   String toString() {
-    return 'HomeViewState(isLoading: $isLoading, meal: $meal)';
+    return 'RandomMealViewState(isLoading: $isLoading, meal: $meal)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other is _HomeViewState &&
+        (other is _RandomMealViewState &&
             (identical(other.isLoading, isLoading) ||
                 const DeepCollectionEquality()
                     .equals(other.isLoading, isLoading)) &&
@@ -162,13 +162,14 @@ class _$_HomeViewState implements _HomeViewState {
 
   @JsonKey(ignore: true)
   @override
-  _$HomeViewStateCopyWith<_HomeViewState> get copyWith =>
-      __$HomeViewStateCopyWithImpl<_HomeViewState>(this, _$identity);
+  _$RandomMealViewStateCopyWith<_RandomMealViewState> get copyWith =>
+      __$RandomMealViewStateCopyWithImpl<_RandomMealViewState>(
+          this, _$identity);
 }
 
-abstract class _HomeViewState implements HomeViewState {
-  const factory _HomeViewState({bool isLoading, MealEntity meal}) =
-      _$_HomeViewState;
+abstract class _RandomMealViewState implements RandomMealViewState {
+  const factory _RandomMealViewState({bool isLoading, MealEntity meal}) =
+      _$_RandomMealViewState;
 
   @override
   bool get isLoading => throw _privateConstructorUsedError;
@@ -176,6 +177,6 @@ abstract class _HomeViewState implements HomeViewState {
   MealEntity get meal => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$HomeViewStateCopyWith<_HomeViewState> get copyWith =>
+  _$RandomMealViewStateCopyWith<_RandomMealViewState> get copyWith =>
       throw _privateConstructorUsedError;
 }
