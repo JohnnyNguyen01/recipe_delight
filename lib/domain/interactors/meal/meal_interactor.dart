@@ -4,6 +4,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:recipe_app/domain/entities/meal/meal_entity.dart';
 import 'package:recipe_app/domain/entities/failure/failure.dart';
 import 'package:dartz/dartz.dart';
+import 'package:recipe_app/domain/entities/meal_card/meal_card_entity.dart';
 import 'package:recipe_app/domain/entities/thumbnail_size.dart';
 import 'package:recipe_app/domain/interactors/meal/i_meal_interactor.dart';
 import 'package:recipe_app/domain/repositories/i_meal_repository.dart';
@@ -41,5 +42,33 @@ class MealInteractor implements IMealInteractor {
       },
       (failure) => Right(failure),
     );
+  }
+
+  @override
+  Future<Either<List<MealCardEntity>, Failure>> fetchRandomMealCards(
+      {int? amount}) async {
+    final numberOfCards = amount ?? 5;
+    final mealCards = <MealCardEntity>[];
+    Failure? error;
+    for (int i = 0; i < numberOfCards; i++) {
+      final response = await fetchRandomMeal();
+      response.fold(
+        (mealEntity) => mealCards.add(
+          MealCardEntity(
+            title: mealEntity.name,
+            subtitle: mealEntity.region,
+            category: mealEntity.categories[0],
+            imageUrl: mealEntity.imageUrl,
+          ),
+        ),
+        (failure) => error = failure,
+      );
+    }
+    final failure = error;
+    if (failure != null) {
+      return right(failure);
+    } else {
+      return left(mealCards);
+    }
   }
 }
